@@ -1,0 +1,34 @@
+@import "tailwindcss";
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+.images {
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+@media (max-width: 767px) {
+  .images {
+    background-image: url("/images/bg-pattern-mobile.svg");
+    background-position: bottom center;
+  }
+}
+.faq-section {
+  border-bottom: 1px solid;
+}
+h2 {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+h2:hover,
+h2:active,
+h2:focus {
+  color: hsl(14, 88%, 65%);
+}
